@@ -581,6 +581,14 @@ header {
   border: 1px solid rgba(46, 47, 66, 0.4);
   background-color: transparent;
   padding-left: 38px;
+  outline: transparent;
+}
+
+.modal-input:focus {
+  border-color: #4d5ae5;
+}
+.modal-input:focus + .modal-input-icon {
+  fill: #4d5ae5;
 }
 
 .modal-input-text {

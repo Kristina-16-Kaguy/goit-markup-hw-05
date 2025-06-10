@@ -661,12 +661,17 @@ header {
   line-height: 1.16;
   letter-spacing: 0.04em;
 }
+
 .check-element {
   width: 16px;
   height: 16px;
   border-radius: 2px;
   border: 1px solid rgba(46, 47, 66, 0.4);
   margin-right: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  fill: transparent;
 }
 
 .check-text {
@@ -681,5 +686,8 @@ header {
 }
 
 .modal-check:checked + .check-text .check-element {
-  border: none;
+  border: 1px solid #404bbf;
+  fill: #f4f4fd;
+  border-radius: 2px;
+  background-color: #404bbf;
 }

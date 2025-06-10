@@ -722,12 +722,13 @@ header {
   display: block;
   margin: 0 auto;
   padding: 16px 32px;
-  width: 169px;
+  min-width: 169px;
   height: 56px;
   background-color: #4d5ae5;
   box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.15);
   outline: none;
   border: none;
+  cursor: pointer;
 }
 
 .modal-btn-text {
@@ -737,7 +738,8 @@ header {
   line-height: 1.5;
   letter-spacing: 0.04em;
   text-align: center;
-  color: #fff;
+  color: #ffffff;
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .modal-text-area {
@@ -751,6 +753,8 @@ header {
   padding-right: 16px;
   padding-left: 16px;
   padding-bottom: 8px;
+  font-size: 12px;
+  line-height: 1.17;
 }
 
 .modal-text-area::placeholder {
@@ -758,9 +762,16 @@ header {
   font-family: 'Roboto', sans-serif;
   font-size: 12px;
   color: rgba(46, 47, 66, 0.4);
-  line-height: 1.16;
+  line-height: 1.17;
   letter-spacing: 0.04em;
+  color: rgba(46, 47, 66, 0.4);
+  outline: transparent;
+  transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
+
+/* .modal-text-area:focus {
+  border-color: #4D5AE5
+} */
 
 .check-element {
   width: 16px;
@@ -768,17 +779,20 @@ header {
   border-radius: 2px;
   border: 1px solid rgba(46, 47, 66, 0.4);
   margin-right: 8px;
-  display: flex;
+  display: inline-flex;
   align-items: center;
   justify-content: center;
   fill: transparent;
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    border 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .check-text {
   font-family: 'Roboto', sans-serif;
   font-weight: 400;
   font-size: 12px;
-  line-height: 1.16;
+  line-height: 1.17;
   letter-spacing: 0.04em;
   color: #8e8f99;
   display: flex;
@@ -790,4 +804,7 @@ header {
   fill: #f4f4fd;
   border-radius: 2px;
   background-color: #404bbf;
+}
+.user-policy-link {
+  color: #4d5ae5;
 }

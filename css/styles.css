@@ -443,7 +443,7 @@ header {
 }
 
 .footer-container {
-  justify-content: space-between;
+  justify-content: center;
   align-items: baseline;
   flex-wrap: wrap;
   display: flex;
@@ -496,6 +496,7 @@ header {
   margin: 0 auto;
   gap: 16px;
 }
+
 .footer-socialmedia-link {
   width: 40px;
   height: 40px;
@@ -512,6 +513,19 @@ header {
   background-color: #31d0aa;
 }
 
+.footer-email-form {
+  margin-left: auto;
+}
+
+.footer-email-form {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+  color: #fff;
+  margin-bottom: 16px;
+}
+
 .footer-input {
   width: 264px;
   height: 40px;
@@ -524,10 +538,11 @@ header {
 }
 
 .footer-input::placeholder {
-  font-weight: 400;
+  /* font-weight: 400;
   font-size: 12px;
   line-height: 2;
-  letter-spacing: 0.04em;
+  letter-spacing: 0.04em; */
+  outline: none;
   color: #fff;
 }
 
@@ -541,6 +556,12 @@ header {
   color: #fff;
   line-height: 1.5;
   letter-spacing: 0.04em;
+  gap: 8px;
+}
+
+.footer-btn-icon {
+  fill: #fff;
+  stroke-width: 1px;
 }
 
 /* MODAL */

@@ -513,6 +513,11 @@ header {
   background-color: #31d0aa;
 }
 
+.footer-form {
+  display: flex;
+  gap: 24px;
+}
+
 .footer-email-form {
   margin-left: auto;
 }
@@ -535,6 +540,10 @@ header {
   background-color: transparent;
   padding-left: 16px;
   margin-right: 24px;
+  font-size: 12px;
+  line-height: 2;
+  letter-spacing: 0.04em;
+  color: #ffffff;
 }
 
 .footer-input::placeholder {
@@ -543,13 +552,13 @@ header {
   line-height: 2;
   letter-spacing: 0.04em; */
   outline: none;
-  color: #fff;
+  color: #ffffff;
 }
 
 .footer-btn {
   border: none;
   background-color: #4d5ae5;
-  width: 165px;
+  min-width: 165px;
   height: 40px;
   border-radius: 4px;
   padding: 8px 24px;
@@ -557,11 +566,17 @@ header {
   line-height: 1.5;
   letter-spacing: 0.04em;
   gap: 8px;
+  font-weight: 500;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
 }
 
 .footer-btn-icon {
   fill: #fff;
   stroke-width: 1px;
+  margin-left: 16px;
 }
 
 /* MODAL */

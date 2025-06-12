@@ -519,16 +519,13 @@ header {
 }
 
 .footer-email-form {
-  margin-left: auto;
-}
-
-.footer-email-form {
   font-weight: 500;
   font-size: 16px;
   line-height: 1.5;
   letter-spacing: 0.02em;
   color: #fff;
   margin-bottom: 16px;
+  margin-left: auto;
 }
 
 .footer-input {
@@ -539,7 +536,7 @@ header {
   border: 1px solid #fff;
   background-color: transparent;
   padding-left: 16px;
-  margin-right: 24px;
+  /* margin-right: 24px; */
   font-size: 12px;
   line-height: 2;
   letter-spacing: 0.04em;
@@ -565,7 +562,7 @@ header {
   color: #fff;
   line-height: 1.5;
   letter-spacing: 0.04em;
-  gap: 8px;
+
   font-weight: 500;
   display: flex;
   justify-content: center;
@@ -736,6 +733,7 @@ header {
   box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.15);
   outline: none;
   border: none;
+  border-radius: 4px;
   cursor: pointer;
   font-weight: 500;
   line-height: 1.5;
